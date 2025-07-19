@@ -1,150 +1,152 @@
-
 <!doctype html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-       content="NeuVol">
-    <title>NeuVol</title>
-    <link href="WebRef/bootstrap.min.css" rel="stylesheet">
-    <link href="WebRef/jumbotron.css" rel="stylesheet">
-    <style>
-        .custom-navbar {
-            background-color: #f5f5f5;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="NeuVol: Edge-Assisted Immersive Streaming">
+  <title>NeuVol</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
 
-        .custom-text-color .navbar-brand,
-        .custom-text-color .nav-link {
-            color: black !important;
-            font-weight: bold;
-        }
+    .navbar-custom {
+      background-color: #111;
+    }
 
-        .custom-text-color .nav-link:active {
-            color: blue !important;
-        }
+    .navbar-custom .navbar-brand {
+      color: #fff !important;
+      font-weight: 500;
+    }
 
-        .custom-brand {
-            display: block;
-            font-size: 3rem;
-            text-align: center;
-            margin-bottom: 10px;
-        }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://source.unsplash.com/1600x900/?hologram,technology') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 1rem;
+    }
 
-        .nav-item {
-            flex-grow: 1;
-            text-align: center;
-        }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
 
-        /* Add the following CSS for the header section */
-        .header {
-          background-image: url('your-image-url.jpg'); /*   Add CoMIC image */
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            position: relative;
-        }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-        .header-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-        }
+    .overview-section {
+      padding: 4rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
 
-        .header-text h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-        }
+    .overview-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      text-align: left;
+    }
 
-        .header-text p {
-            font-size: 1.5rem;
-        }
-	
-	    .footer {
-            background-color: #2c3e50;
-            padding: 20px 0;
-            color: #fff;
-        }
+    .overview-card h2 {
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
 
-        .footer p {
-            margin-bottom: 0;
-        }
-	
-    </style>
+    .overview-card p,
+    .overview-card ul {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .overview-card ul {
+      padding-left: 1.2rem;
+    }
+
+    .overview-card ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer.footer {
+      background-color: #111;
+      color: #aaa;
+      padding: 1rem 0;
+    }
+
+    footer.footer a {
+      color: #1abc9c;
+    }
+  </style>
 </head>
 
 <body>
-    <a class="navbar-brand custom-brand" href="#">NeuVol: Revolutionizing Immersive Video
-Streaming with Neural Content Representation</a>
-<nav class="navbar navbar-expand-md navbar-dark custom-navbar custom-text-color">
-    <div class="container" style="max-width: 1300px;"> <!-- Set max-width to 800px for testing -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto d-flex w-100">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Goals.html">Goals</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Organization.html">Organization</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Technology.html">Working Groups</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Publications.html">Publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="News.html">News</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="Get_Involved.html">Get Involved</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-    
-   
-<main role="main">
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom">
     <div class="container">
-        <div class="container">
-            <br>
-            <p><h5>NeuVol is an edge-assisted robust, bandwidth-efficient, and low-latency immersive video streaming framework with neural content representation.</h5></p>
-            <br>
-        </div>
+      <a class="navbar-brand" href="#">NeuVol</a>
     </div>
-</main>
+  </nav>
 
+  <!-- Hero Section -->
+  <header class="hero">
+    <div>
+      <h1>NeuVol</h1>
+      <p>Edge-Assisted Immersive Streaming with Neural Radiance Fields</p>
+    </div>
+  </header>
 
-    <script src="WebRef/jquery-3.2.1.slim.min.js"></script>
-    <script src="WebRef/popper.min.js"></script>
-    <script src="WebRef/bootstrap.min.js"></script>
+  <!-- Overview Section -->
+  <section class="overview-section">
+    <div class="overview-card">
+      <h2>Overview</h2>
+      <p>
+        Holographic communication offers an interactive user experience by delivering immersive content that depicts 3D scenes, allowing users to change their viewpoint and view direction freely. Traditional content representations such as point clouds and meshes have been widely studied for immersive video streaming, but their discrete nature limits photo-realistic rendering and degrades user experience.
+      </p>
+      <p>
+        This project explores <strong>neural radiance fields (NeRF)</strong>, a novel implicit representation that models 3D scenes continuously using neural networks. NeuVol aims to build a real-time immersive video streaming system with neural content representation that is:
+      </p>
+      <ul>
+        <li>Resilient to packet loss and rendering artifacts</li>
+        <li>Feasible within current Internet bandwidth</li>
+        <li>Capable of achieving low end-to-end latency</li>
+      </ul>
+      <p>
+        The research introduces innovations in <strong>streaming resiliency</strong>, <strong>bandwidth optimization</strong>, and <strong>latency reduction</strong>, integrating them into a comprehensive edge-assisted framework. A proof-of-concept will be developed and evaluated in real-world environments.
+      </p>
+    </div>
+  </section>
 
- <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>NeuVol &copy; Copyright 2025. All rights reserved.</p>
-                    <p>4400 University Dr, Fairfax, VA, US</p>
-                    <!-- <p>Email: bohan@gmu.edu | Phone: +1(703)xxx-xxxx</p> -->
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 NeuVol. All rights reserved.</p>
+      <p>4400 University Dr, Fairfax, VA | <a href="mailto:bohan@gmu.edu">bohan@gmu.edu</a></p>
+    </div>
+  </footer>
 
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>                   
+
+</html>
